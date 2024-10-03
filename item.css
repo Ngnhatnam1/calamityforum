@@ -1,0 +1,955 @@
+*{
+    scroll-behavior: smooth;
+    color: white;
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.background-img{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(47, 20, 20, 0.8), rgba(47, 20, 20, 0.8)),url(img/infernum_title_screen.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding: 2% 6% ;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{ 
+    width: 300px; 
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: white ;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+/*--Hover CSS on navigations--*/
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: aqua;
+    display: block;
+    margin: auto;
+    transition: 0.1s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+/*--Center Article CSS--*/
+.main-content{
+    width: 90%;
+    color:white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.main-content h1{
+    font-size: 62px;
+}
+.main-content p{
+    margin: 10px 0 40px ;
+    font-size: 18px;
+    color: white;
+}
+
+/*-- Hover CSS on "contact" button --*/
+.contact{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+}
+.contact:hover{
+    border: 1px solid rgb(192, 62, 62);
+    background: rgb(192, 62, 62)
+}
+
+/*--Hides Open/Close icon on Desktop size--*/
+nav .fa{
+    display: none;
+}
+
+/*--Responsive Web actives when device's width is lower than 700px CSS -- Head Page section --*/
+@media(max-width: 700px){
+    .text-box h1{
+    font-size: 20px;
+    }
+    .nav-links ul li{
+    display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background: rgb(60, 32, 32);
+        height: 100vh;
+        width: 150px;
+        top: 0;
+        right: -150px;
+        text-align: left;
+        z-index: 2; 
+        transition: 0.5s;
+    }
+    nav .fa{
+        display: block;
+        color: white; 
+        margin: 10px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    .nav-links ul{
+        padding: 20px;
+    }
+}
+
+.item-head-page{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(47, 20, 20, 0.8), rgba(47, 20, 20, 0.8)),url(img/calamity-items.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.item-content{
+    width: 90%;
+    color:white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.item-content h1{
+    font-size: 62px;
+}
+.item-content h1 img{
+    width: 4%;
+}
+.item-content p{
+    margin: 10px 0 40px ;
+    font-size: 16px;
+    color: white;
+}
+
+@media(max-width:700px){
+    .item-content h1{
+        font-size: 40px;
+    }
+    .item-content h1 img{
+        width: 10%;
+    }
+}
+
+/*-- Accessories s1 -- */
+.accessories-s1{
+    color: white;
+    background: black;
+    width: 100%;
+    margin: auto;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+.row2{
+    display: flex;   /* div text stays left / img div stays right */
+    align-items: center;
+}
+.accessories-col{
+    flex-basis: 30%;
+    padding:  40px 40px 40px 3%;
+    word-wrap: break-word;  /* make sure left div break line whenever touching div boundary*/
+    overflow: hidden;       /* make sure the left div doesn't pushover right div*/
+}
+.accessories-col h1{
+    border-top: solid;
+    padding-top: 14px;
+}
+.accessories-col p{
+    border-bottom: solid;
+    padding-bottom: 14px;
+}
+.accessories-col img{
+    width: 80%;
+    background-color: rgb(101, 54, 54); 
+    border-style: solid; border-width:6px;
+    border-image: linear-gradient(to right, rgb(156, 52, 52), rgb(173, 116, 116)) 1;
+}
+
+/*-- Offensive-col makes sure all contents inside stay within shape (Major)--*/
+.offensive-col{
+    color: white;
+    text-align: center;
+    border-style: double; color: grey;
+    margin: 20px 200px 20px 200px;
+    padding: 30px;
+}
+@media(max-width:700px){
+    /*-- OFFENSIVE COL  RES --*/
+    .offensive-col{
+        margin: 10px 100px 120px 20px !important;
+        width: 70% !important;
+    }
+    .dark-sun-ring{
+        flex-direction: column !important;
+        width: 90%;
+        padding: 0 10px 40px 0 !important;
+    }
+    .dark-sun-ring-right-p{
+        padding: 10px 0 0 10px !important;
+    }
+
+    .eldritch-soul-artifact{
+        flex-direction: column !important;
+        width: 90%;
+        padding: 0 10px 40px 0 !important;
+    }
+    .eldritch-soul-artifact-right-p{
+        padding: 10px 0 0 10px !important;
+    }
+
+    .elemental-gauntlet{
+        flex-direction: column !important;
+        width: 90%;
+        padding: 0 10px 40px 0 !important;
+    }
+    .elemental-gauntlet-right-p{
+        padding: 10px 0 0 10px !important;
+    }
+
+    .warbanner-of-the-sun{
+        flex-direction: column !important;
+        width: 90%;
+        padding: 0 10px 40px 0 !important;
+    }
+    .warbanner-of-the-sun-right-p{
+        padding: 10px 0 0 10px !important;
+    }
+
+    .yharim-gift{
+        flex-direction: column !important;
+        width: 90%;
+        padding: 0 10px 40px 0 !important;
+    }
+    .yharim-gift-right-p{
+        padding: 10px 0 0 10px !important;
+    }
+
+        /*-- OFFENSIVE COL  RES --*/
+    .defensive-col{
+        margin: 10px 100px 120px 20px !important;
+        width: 70% !important;
+    }
+    .asgardian-aegis{
+        flex-direction: column !important;
+        width: 90%;
+        padding: 0 10px 40px 0 !important;
+    }
+    .asgardian-aegis-right-p{
+        padding: 10px 0 0 10px !important;
+    }
+    .infected-jewel{
+        flex-direction: column !important;
+        width: 90%;
+        padding: 0 10px 40px 0 !important;
+    }
+    .infected-jewel-right-p{
+        padding: 10px 0 0 10px !important;
+    }
+    .the-absorber{
+        flex-direction: column !important;
+        width: 90%;
+        padding: 0 10px 40px 0 !important;
+    }
+    .the-absorber-right-p{
+        padding: 10px 0 0 10px !important;
+    }
+    .the-sponge{
+        flex-direction: column !important;
+        width: 90%;
+        padding: 0 10px 40px 0 !important;
+    }
+    .the-sponge-right-p{
+        padding: 10px 0 0 10px !important;
+    }
+    .draedon-heart{
+        flex-direction: column !important;
+        width: 90%;
+        padding: 0 10px 40px 0 !important;
+    }
+    .draedon-heart-right-p{
+        padding: 10px 0 0 10px !important;
+    }
+
+
+        /*-- ACCESSORY RES --*/
+    .weapon-col2{
+        margin: 10px 100px 120px 20px !important;
+        width: 70% !important;
+    }
+    .ark-of-the-cosmos{
+        flex-direction: column !important;
+        width: 90%;
+        padding: 0 10px 40px 0 !important;
+    }
+    .ark-of-the-cosmos-right-p{
+        padding: 10px 0 0 10px !important;
+    }
+    .galaxia{
+        flex-direction: column !important;
+        width: 90%;
+        padding: 0 10px 40px 0 !important;
+    }
+    .galaxia-right-p{
+        flex-direction: column !important;
+        width: 90%;
+        padding: 0 10px 0 0 !important;
+    }
+    .aegis-blade{
+        flex-direction: column !important;
+        width: 90%;
+        padding: 0 10px 40px 0 !important;
+    }
+    .aegis-blade-right-p{
+        padding: 10px 0 0 10px !important;
+    }
+    .triactis-true-paladinian-mage-hammer-of-might{
+        flex-direction: column !important;
+        width: 90%;
+        padding: 0 10px 40px 0 !important;
+    }
+    .triactis-true-paladinian-mage-hammer-of-might-right-p{
+        padding: 10px 0 0 10px !important;
+    }
+    .onyxia{
+        flex-direction: column !important;
+        width: 90%;
+        padding: 0 10px 40px 0 !important;
+    }
+    .onyxia-right-p{
+        padding: 10px 0 0 10px !important;
+    }
+    .the-sevens-striker{
+        flex-direction: column !important;
+        width: 90%;
+        padding: 0 10px 40px 0 !important;
+    }
+    .the-sevens-striker-right-p{
+        padding: 10px 0 0 10px !important;
+    }
+    .rancor{
+        flex-direction: column !important;
+        width: 90%;
+        padding: 0 10px 40px 0 !important;
+    }
+    .rancor-right-p{
+        padding: 10px 0 0 10px !important;
+    }
+    .cosmic-immaterializer{
+        flex-direction: column !important;
+        width: 90%;
+        padding: 0 10px 40px 0 !important;
+    }
+    .cosmic-immaterializer-right-p{
+        padding: 10px 0 0 10px !important;
+    }
+
+
+    /*-- Armor --*/
+    .armor-col2{
+        margin: 10px 100px 120px 20px !important;
+        width: 70% !important;
+    }
+    .auric-tesla{
+        flex-direction: column !important;
+        width: 90%;
+        padding: 0 10px 40px 0 !important;
+    }
+    .auric-tesla-right-p{
+        padding: 10px 0 0 10px !important;
+    }
+    .demonshade{
+        flex-direction: column !important;
+        width: 90%;
+        padding: 0 10px 40px 0 !important;
+    }
+    .demonshade-right-p{
+        padding: 10px 0 0 10px !important;
+    }
+
+    /*-- IMAGE RES --*/
+    .armor-col{
+        padding: 0 0 0 6% !important;
+    }
+    .armor-col img{
+        width: 90% !important;
+    }
+
+    .weapon-col img{
+        width: 100% !important;
+    }
+
+    .accessories-col img{
+        width:100% !important;
+    }
+
+
+    .row2{
+        flex-direction: column !important;
+    }
+
+    .weapon-col h1{
+        padding: 22px 0 0 0 !important;
+    }
+    .weapon-col p{
+        padding:0 0 22px 0 !important;
+    }
+
+
+    /*-- CONTENT LIST RES --*/
+    .inside-content-list{
+        width: 50% !important;
+        margin: 0 0 0 1% !important;
+    }
+
+}
+.offensive-col h1{
+    padding: 20px;
+}
+.offensive-col p{
+    padding-left: 8%;
+    display: flex;
+    align-items: center; 
+}
+.offensive-col p img{
+    padding-right: 10px;
+    padding-left: 0;
+}
+
+
+/*-- these are minor factors in adjusting boxes --*/
+.dark-sun-ring{
+    display: flex;
+    padding: 40px;
+}
+.dark-sun-ring-left-p{
+    flex: 0 0 auto;
+    flex-basis: 80%;                       /*-- Nah bro dont even complain --*/
+    border-style: double; color: grey;
+    padding: 10px !important;
+}
+.dark-sun-ring-left-p{
+    flex-basis: 20%;
+    color: white;
+}
+
+.eldritch-soul-artifact{
+    display: flex;
+    padding: 40px;
+}
+.eldritch-soul-artifact-left-p{
+    color: white !important;
+    flex: 0 0 auto;
+    flex-basis: 20%;                  /*-- this also --*/
+    border-style: double; color: grey;
+    padding: 10px !important;
+}
+.eldritch-soul-artifact-right-p{
+    flex-basis: 80%;
+}
+
+.elemental-gauntlet{
+    display: flex;
+    padding: 40px;
+}
+.elemental-gauntlet-left-p{
+    color: white !important;
+    flex: 0 0  auto;
+    flex-basis: 20%;
+    border-style: double; color: grey;
+    padding: 10px !important;
+}
+.elemental-gauntlet-right-p{
+    flex-basis: 80%;
+}
+
+.warbanner-of-the-sun{
+    display: flex;
+    padding: 40px;
+}
+.warbanner-of-the-sun-left-p{
+    color: white !important;
+    flex: 0 0 auto;
+    flex-basis: 20%;
+    border-style: double; color: grey;
+    padding: 10px !important;
+}
+.warbanner-of-the-sun-right-p{
+    flex-basis: 80%;
+}
+
+.yharim-gift{
+    display: flex;
+    padding: 40px;
+}
+.yharim-gift-left-p{
+    color: white !important;
+    flex: 0 0 auto;
+    flex-basis: 20%;
+    border-style: double; color: grey;
+    padding: 10px !important;
+}
+.yharim-gift-right-p{
+    flex-basis: 80%;
+}
+
+
+
+/*--   Defensive-col--*/
+.defensive-col{
+    text-align: center;
+    border-style: double; color: grey;
+    margin: 40px 200px 40px 200px;
+    padding: 20px;
+}
+.defensive-col h1{
+    padding: 20px;
+}
+.defensive-col p{
+    padding-left: 8%;
+    display: flex;
+    align-items: center; 
+}
+.defensive-col p img{
+    padding-right: 10px;
+    padding-left: 0;
+}
+
+.asgardian-aegis{
+    display: flex;
+    padding: 40px;
+}
+.asgardian-aegis-left-p{
+    color: white !important;
+    flex: 0 0 auto;
+    flex-basis: 20%;
+    border-style: double; color: grey;
+    padding: 10px !important;
+}
+.asgardian-aegis-right-p{
+    flex-basis: 80%;
+}
+
+.infected-jewel{
+    display: flex;
+    padding: 40px;
+}
+.infected-jewel-left-p{
+    color: white !important;
+    flex: 0 0 auto;
+    flex-basis: 20%;
+    border-style: double; color: grey;
+    padding: 10px !important;
+}
+.infected-jewel-right-p{
+    flex-basis: 80%;
+}
+
+.the-absorber{
+    display: flex;
+    padding: 40px;
+}
+.the-absorber-left-p{
+    color: white !important;
+    flex: 0 0 auto;
+    flex-basis: 20%;
+    border-style: double; color: grey;
+    padding: 10px !important;
+}
+.the-absorber-right-p{
+    flex-basis: 80%;
+}
+
+.the-sponge{
+    display: flex;
+    padding: 40px;
+}
+.the-sponge-left-p{
+    color: white !important;
+    flex: 0 0 auto;
+    flex-basis: 20%;
+    border-style: double; color: grey;
+    padding: 10px !important;
+}
+.the-sponge-right-p{
+    flex-basis: 80%;
+}
+
+.draedon-heart{
+    display: flex;
+    padding: 40px;
+}
+.draedon-heart-left-p{
+    color: white !important;
+    flex: 0 0 auto;
+    flex-basis: 20%;
+    border-style: double; color: grey;
+    padding: 10px !important;
+}
+.draedon-heart-right-p{
+    flex-basis: 80%;
+}
+
+
+
+
+/*--Weapon section --*/
+.weapon-s1{
+    color: white;
+    background: black;
+    width: 100%;
+    margin: auto;
+    padding-bottom: 10%;
+}
+.weapon-col{
+    flex-basis: 48%;
+    padding: 50px;
+    word-wrap: break-word;  /* make sure left div break line whenever touching div boundary*/
+    overflow: hidden;       /* make sure the left div doesn't pushover right div*/
+}
+.weapon-col h1{
+    border-top: solid;
+    padding-top: 14px;
+}
+.weapon-col p{
+    border-bottom: solid;
+    padding-bottom: 14px;
+}
+.weapon-col img{
+    width: 70%;
+    height: 10%;
+    background-color: rgb(125, 115, 115);
+    border-style: solid; border-width:6px;
+    border-image: linear-gradient(to right, rgb(170, 154, 154), rgb(49, 176, 196)) 1;
+}
+
+.weapon-col2{
+    text-align: center;
+    border-style: double; color: grey;
+    margin: 20px 200px 20px 200px;
+    padding: 30px;
+}
+.weapon-col2 h1{
+    padding: 20px;
+}
+.weapon-col2 p{
+    padding-left: 8%;
+    display: flex;
+    align-items: center; 
+}
+.weapon-col2 p img{
+    padding-right: 10px;
+    padding-left: 0;
+}
+
+.ark-of-the-cosmos{
+    display: flex;
+    padding: 40px;
+}
+.ark-of-the-cosmos-left-p{
+    color: white !important;
+    flex: 0 0 auto;
+    flex-basis: 30%;
+    border-style: double; color: grey;
+    padding: 10px !important;
+}
+.ark-of-the-cosmos-right-p{
+    flex-basis: 70%;
+}
+
+.galaxia{
+    display: flex;
+    padding: 40px;
+}
+.galaxia-left-p{
+    color: white !important;
+    flex: 0 0 auto;
+    flex-basis: 30%;
+    border-style: double; color: grey;
+    padding: 10px !important;
+}
+.galaxia-right-p{
+    flex-basis: 70%;
+}
+
+.aegis-blade{
+    display: flex;
+    padding: 40px;
+}
+.aegis-blade-left-p{
+    color: white !important;
+    flex: 0 0 auto;
+    flex-basis: 30%;
+    border-style: double; color: grey;
+    padding: 10px !important;
+}
+.aegis-blade-right-p{
+    flex-basis: 70%;
+}
+
+.triactis-true-paladinian-mage-hammer-of-might{
+    display: flex;
+    padding: 40px;
+}
+.triactis-true-paladinian-mage-hammer-of-might-left-p{
+    color: white !important;
+    flex: 0 0 auto;
+    flex-basis: 30%;
+    border-style: double; color: grey;
+    padding: 10px !important;
+}
+.triactis-true-paladinian-mage-hammer-of-might-right-p{
+    flex-basis: 70%;
+}
+
+.onyxia{
+    display: flex;
+    padding: 40px;
+}
+.onyxia-left-p{
+    color: white !important;
+    flex: 0 0 auto;
+    flex-basis: 30%;
+    border-style: double; color: grey;
+    padding: 10px !important;
+}
+.onyxia-right-p{
+    flex-basis: 70%;
+}
+
+.the-sevens-striker{
+    display: flex;
+    padding: 40px;
+}
+.the-sevens-striker-left-p{
+    color: white !important;
+    flex: 0 0 auto;
+    flex-basis: 30%;
+    border-style: double; color: grey;
+    padding: 10px !important;
+}
+.the-sevens-striker-right-p{
+    flex-basis: 70%;
+}
+
+.rancor{
+    display: flex;
+    padding: 40px;
+}
+.rancor-left-p{
+    color: white !important;
+    flex: 0 0 auto;
+    flex-basis: 30%;
+    border-style: double; color: grey;
+    padding: 10px !important;
+}
+.rancor-right-p{
+    flex-basis: 70%;
+}
+
+.cosmic-immaterializer{
+    display: flex;
+    padding: 40px;
+}
+.cosmic-immaterializer-left-p{
+    color: white !important;
+    flex: 0 0 auto;
+    flex-basis: 30%;
+    border-style: double; color: grey;
+    padding: 10px !important;
+}
+.cosmic-immaterializer-right-p{
+    flex-basis: 70%;
+}
+
+
+
+
+
+/*--Armor section --*/
+.armor-s1{
+    color: white;
+    background: black;
+    width: 100%;
+    margin: auto;
+    padding-bottom: 10%;
+}
+.armor-col{
+    flex-basis: 48%;
+    padding: 50px;
+    word-wrap: break-word;  /* make sure left div break line whenever touching div boundary*/
+    overflow: hidden;       /* make sure the left div doesn't pushover right div*/
+}
+.armor-col img{
+    width: 70%;
+    height: 10%;
+    background-color: rgb(125, 115, 115);
+    border-style: solid; border-width:6px;
+    border-image: linear-gradient(to right, rgb(170, 154, 154), rgb(49, 176, 196)) 1;
+}
+.armor-col h1{
+    border-top: solid;
+    padding-top: 14px;
+}
+.armor-col p{
+    border-bottom: solid;
+    padding-bottom: 14px;
+}
+
+.armor-col2{
+    text-align: center;
+    border-style: double; color: grey;
+    margin: 20px 200px 20px 200px;
+    padding: 30px;
+}
+.armor-col2 h1{
+    padding: 20px;
+}
+.armor-col2 p{
+    padding-left: 8%;
+    display: flex;
+    align-items: center; 
+}
+.armor-col2 p img{
+    padding-right: 10px;
+    padding-left: 0;
+}
+
+.auric-tesla{
+    display: flex;
+    padding: 40px;
+}
+.auric-tesla-left-p{
+    color: white !important;
+    flex: 0 0 auto;
+    flex-basis: 30%;
+    border-style: double; color: grey;
+    padding: 10px !important;
+}
+.auric-tesla-right-p{
+    flex-basis: 70%;
+}
+
+.demonshade{
+    display: flex;
+    padding: 40px;
+}
+.demonshade-left-p{
+    color: white !important;
+    flex: 0 0 auto;
+    flex-basis: 30%;
+    border-style: double; color: grey;
+    padding: 10px !important;
+}
+.demonshade-right-p{
+    flex-basis: 70%;
+}
+
+
+/*-- LIST CONTENT -- */
+.inside-content-list{
+    flex-basis: 20%;
+    width: 25%;
+    border-style: solid;
+    margin: 10px 30px 10px 0;
+    background: rgb(41, 34, 34);
+   
+}
+.inside-content-list li{
+    list-style: none;
+}
+.pre-hardmode-list{
+    padding: 12px 0 8px 10%;
+}
+.pre-hardmode-list a:link{
+    color: aqua;
+}
+.pre-hardmode-list a:hover{
+    color: orange;
+}
+.pre-hardmode-list a:visited{
+    color: yellow;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-- Footer section --*/
+.footer{
+    color: white;
+    background-color: rgb(83, 46, 46);
+    margin: auto;
+    text-align: center;
+    padding: 5%;
+    line-height: 1.5;
+}
+.footer p{
+    padding-bottom: 25px;
+}
+.icons a{
+    color: white;
+    text-decoration: none;
+}
+.fa{
+    padding-right: 20px;
+    padding-left: 15px;
+    cursor: pointer;
+}
+.fa::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: aqua;
+    display: flexbox;
+    margin: auto;
+}
+.fa:hover::after{
+    width: 100%;
+
+}

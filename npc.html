@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Responsive Web-->
+    <title>Calamity University</title>
+    <link rel="stylesheet" href="npc.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/png" href="img/skibidi.jpg">
+  
+</head>
+<body>
+    <section class="background-img"> <!--class contain main background img-->
+        <nav> <!-- tag consists of main page navigations-->
+            <a href=""><img src="img/calamity-logo.webp"></a>
+            <div class="nav-links" id="navLinks"> <!--class for List navigations and id for Javascript uses-->
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="Home.html">HOME</a></li>
+                    <li><a href="Item.html">ITEM</a></li>
+                    <li><a href="npc.html">NPC</a></li>
+                    <li><a href="boss.html">BOSSES</a></li>
+                    <li><a href="forum.html">FORUM BOX</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()" ></i>
+            <div class="login">
+                
+            </div>
+        </nav>
+
+     <div class="npc-content">
+        <h1><img src="img/Guide.png" style="width: 3%;">TOWN / BOSS NPC <img src="img/Traveling_Merchant.png" style="width: 3%;"></h1>
+        <p>List below are NPCs exclusively in Calamity Mod, scaling on Vanilla NPCs also changes depending on difficulties  </p>
+  
+     </div>
+    </section>
+
+
+     <!-- NPC -->
+     <div class="row">
+        <div class="NPC-col">
+            <h1> - NPCs - </h1>
+            <p>Not to be confused with Terraria NPCs.   <br><br>
+                The Calamity Mod adds five friendly NPCs to provide the player with a multitude of weapons and buffs in progression. 
+                These NPCs only move to the player's house once their requirements are met.
+            </p>
+        </div>
+        <div class="NPC-col">
+            <img src="img/title-npc.jpg">
+        </div>
+    </div>
+
+    <section class="npc">
+        <h1>Pre-Hardmode</h1>
+        <table class="mode-npc">
+            <div> <!--adjust within the table but too lazy to remove-->
+                <tr class="mode-npc-title">
+                    <th colspan="2">NPC</th>
+                    <th>Requirement</th>
+                    <th>Infomation</th>
+                </tr>
+                <tr class="mode-npc-tr">
+                    <td><img src="img/sea-king.webp" style="align-items: center; padding-left: 16px;"></td>
+                    <td style="white-space: nowrap; color: aquamarine;">Sea King</td>
+                    <td><img src="img/giant-clam.png" style="width: 10%;">Giant Clam has been defeated</td>
+                    <td>Sells a set of water-themed weapons and gear, provides some lore-based information
+                        , and cast <img src="img/Amidias'_Blessing.webp" style="width: 4%;"> Amidas's blessing bubble (buff) for player.
+                    </td>
+                </tr>
+                <tr class="mode-npc-tr">
+                    <td><img src="img/bandit.webp" style="align-items: center; padding-left: 16px;"></td>
+                    <td style="color: brown;">Bandit</td>
+                    <td>Player has beaten da bonez-tron and got al least 1 <img src="img/Platinum_Coin.webp">Platinum coin in their wallet </td>
+                    <td>Sells a bunch of rogue weapons and equipment related, refunds player after using 
+                        Goblin Tinkerer's reforge </td>
+                </tr>
+            </div>
+        </table>
+
+        <h1>Hardmode</h1>
+        <table class="mode-npc">
+            <div> <!--adjust within the table but too lazy to remove-->
+                <tr class="mode-npc-title">
+                    <th colspan="2">NPC</th>
+                    <th>Requirement</th>
+                    <th>Infomation</th>
+                </tr>
+                <tr class="mode-npc-tr">
+                    <td><img src="img/archmage.webp" style="align-items: center; padding-left: 16px;"></td>
+                    <td style="white-space: nowrap; color: rgb(50, 161, 204);">Archmage</td>
+                    <td><img src="img/cryogen.png" style="width: 10%;">Cryogen has been defeated</td>
+                    <td>Sells a set of ice-themed weapons and gear.</td>
+                </tr>
+                <tr class="mode-npc-tr">
+                    <td><img src="img/drunk-princess.webp" style="align-items: center; padding-left: 16px;"></td>
+                    <td style="color: magenta;">Drunk Princess</td>
+                    <td><img src="img/Fabsol's_Vodka.webp">Fabsol's Vodka exists in player's inventory </td>
+                    <td>An alcoholic maniac, sells several "fermented" potions and candles which grant unique buffs and displays the player's deaths.</td>
+                </tr>
+            </div>
+        </table>
+
+        <h1>Post-Memelord</h1>
+        <table class="mode-npc">
+            <div> <!--adjust within the table but too lazy to remove-->
+                <tr class="mode-npc-title">
+                    <th colspan="2">NPC</th>
+                    <th>Requirement</th>
+                    <th>Infomation</th>
+                </tr>
+                <tr class="mode-npc-tr">
+                    <td><img src="img/brimstone-witch.webp" style="align-items: center; padding-left: 16px;"></td>
+                    <td style="white-space: nowrap; color: red;">Brimstone<br> Witch</td>
+                    <td><img src="img/Calamitas_map.webp" style="width: 12%;">Supreme Calamitas has been defeated</td>
+                    <td>Allows the player to enchant their weapons at a high cost, giving the weapons new abilities but with drawbacks.</td>
+                </tr>
+            </div>
+        </table>
+        <!-- <div class="npc1">
+        <h1>name of first NPC</h1>
+            <div class="npc1-edit">
+                <img src="">
+                <p></p>
+            </div>
+            <div>
+                <p></p>
+            </div>
+        </div> -->
+    </section>
+
+
+
+    <!-- Stat -->
+    <div class="row">
+        <div class="NPC-col">
+            <h1> - STATs - </h1>
+            <p>More Specifically, these NPCs are all equipped with different abilities, some with power that can be compared to a boss.<br>
+               
+            </p>
+        </div>
+        <div class="NPC-col">
+            <img src="img/stat-npc.webp">
+        </div>
+    </div>
+
+    <section class="stat">
+        <div class="stat1">
+            <div class="stat-box">
+                <h1>Sea King</h1>
+                <div class="image"><img src="img/sea-king.webp"></div>
+                <h1>Statistics</h1>
+                <div class="ul-flex">
+                    <ul class="ul-left">
+                        <li>Type</li>
+                        <li>Space</li>
+                        <li>Max HP</li>
+                        <li>Defense</li>
+                        <li>KB resist</li>
+                    </ul>
+                    <ul class="ul-right">
+                        <li>NPC</li>
+                        <li>Valid house</li>
+                        <li>7.500</li>
+                        <li>25</li>
+                        <li>35%</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="stat-box">
+                <h1>Bandit</h1>
+                <div class="image"><img src="img/bandit.webp"></div>
+                <h1>Statistics</h1>
+                <div class="ul-flex">
+                    <ul class="ul-left">
+                        <li>Type</li>
+                        <li>Space</li>
+                        <li>Max HP</li>
+                        <li>Defense</li>
+                        <li>KB resist</li>
+                    </ul>
+                    <ul class="ul-right">
+                        <li>NPC</li>
+                        <li>Valid house</li>
+                        <li>250</li>
+                        <li>15</li>
+                        <li>50%</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="stat-box">
+                <h1>Archmage</h1>
+                <div class="image"><img src="img/archmage.webp"></div>
+                <h1>Statistics</h1>
+                <div class="ul-flex">
+                    <ul class="ul-left">
+                        <li>Type</li>
+                        <li>Space</li>
+                        <li>Max HP</li>
+                        <li>Defense</li>
+                        <li>KB resist</li>
+                    </ul>
+                    <ul class="ul-right">
+                        <li>NPC</li>
+                        <li>Valid house</li>
+                        <li>7.500</li>
+                        <li>25</li>
+                        <li>35%</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="stat1">
+            <div class="stat-box">
+                <h1>Drunk Princess</h1>
+                <div class="image"><img src="img/drunk-princess.webp"></div>
+                <h1>Statistics</h1>
+                <div class="ul-flex">
+                    <ul class="ul-left">
+                        <li>Type</li>
+                        <li>Space</li>
+                        <li>Max HP</li>
+                        <li>Defense</li>
+                        <li>KB resist</li>
+                    </ul>
+                    <ul class="ul-right">
+                        <li>NPC</li>
+                        <li>Valid house</li>
+                        <li>20.000</li>
+                        <li>15</li>
+                        <li>50%</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="stat-box">
+                <h1>Brimstone Witch</h1>
+                <div class="image"><img src="img/brimstone-witch.webp"></div>
+                <h1>Statistics</h1>
+                <div class="ul-flex">
+                    <ul class="ul-left">
+                        <li>Type</li>
+                        <li>Space</li>
+                        <li>Max HP</li>
+                        <li>Defense</li>
+                        <li>KB resist</li>
+                    </ul>
+                    <ul class="ul-right">
+                        <li>NPC</li>
+                        <li>Valid house</li>
+                        <li>960.000</li>
+                        <li>120</li>
+                        <li>20%</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <section class="footer">
+        <h1> ABOUT</h1>
+        <p>You can find out more about the Calamity Mod here. This list is really just to introduce this awesome mod 
+            to you and give a bit of information about a truly enormous mod.</p>
+        <div class="icons">
+            <a href="https://www.youtube.com/watch?v=QwLvrnlfdNo"><i class="fa fa-facebook-official"></i></a>
+            <a href="https://www.youtube.com/watch?v=QwLvrnlfdNo"><i class="fa fa-twitter"></i></a>
+            <a href="https://www.youtube.com/watch?v=QwLvrnlfdNo"><i class="fa fa-instagram"></i></a>
+            <a href="https://www.youtube.com/watch?v=QwLvrnlfdNo"><i class="fa fa-reddit"></i></a>
+        </div>
+        <p>
+            
+        </p>
+    </section>
+
+
+    <style>
+        .fa-facebook-official{
+            font-size: 20px;
+        }
+            .fa:hover{
+                color: orange;
+                transition: 0.5s;
+            }
+            .fa-facebook-official:hover{
+                font-size: 25px;
+            }
+            .fa-twitter:hover{
+                font-size: 25px;
+            }
+            .fa-instagram:hover{
+                font-size: 25px;
+            }
+            .fa-reddit:hover{
+                font-size: 25px;
+            }
+
+        .fa-twitter{
+            font-size: 20px;
+        }
+        .fa-instagram{
+            font-size: 20px;
+        }
+        .fa-reddit{
+            font-size: 20px;
+        }   
+    </style>
+
+
+
+
+
+    <!-- Javascript for toggle Open/Close Menu in mobile mode -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-150px";
+        }
+    </script>
+
+</body>
+</html>    

@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Responsive Web-->
+    <title>Calamity University</title>
+    <link rel="stylesheet" href="item.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/png" href="img/skibidi.jpg">
+</head>
+<body>
+    <section class="item-head-page"> <!--class contain main background img-->
+        <nav> <!-- tag consists of main page navigations-->
+            <a href=""><img src="img/calamity-logo.webp"></a>
+            <div class="nav-links" id="navLinks"> <!--class for List navigations and id for Javascript uses-->
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="Home.html">HOME</a></li>
+                    <li><a href="Item.html">ITEM</a></li>
+                    <li><a href="npc.html">NPC</a></li>
+                    <li><a href="boss.html">BOSSES</a></li>
+                    <li><a href="forum.html">FORUM BOX</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()" ></i>
+            <div class="login">
+                
+            </div>
+        </nav>
+     <div class="item-content">
+        <h1><img src="img/aero-stone.webp"> MOD ITEMS <img src="img/soul-of-cryogen.webp"></h1>
+        <p>The Calamity Mod adds several crafting materials to the base game. This is a brief list of all items<br> 
+            that are exclusively crafting materials, i.e. the sole purpose of every item in this list is crafting.</p>
+
+     </div>
+    </section>
+
+
+    <!-- Accessories -->
+    <section class="accessories-s1">
+        <div class="row2">
+            <div class="accessories-col">
+                <h1> - Accessories - </h1>
+                <p>Accessories are equippable items that can provide defense, extra damage and/or special abilities, such as limited flight. 
+                    Up to five accessories may be equipped at any time; furthermore, up to five accessories may be placed in vanity slots, 
+                    which will show the items on the player (if possible) but will not apply any of their effects.</p>
+            </div>
+            <div class="accessories-col">
+                <img src="img/calamity-accessories.png">
+            </div>
+            <div class="inside-content-list">
+                <h1>Content List:</h1>
+                <div class="pre-hardmode-list">
+                    <h1>Accessories</h1>
+                    <a href="#offensive"><p style="padding-left:40px ;">Offensive</p></a>
+                    <a href="#defensive"><p style="padding-left:40px ;">Defensive</p></a>
+                </div>
+                <div class="pre-hardmode-list">
+                    <h1>Weapon</h1>
+                    <ul style="padding-left:15% ;">
+                        <a href="#ark"><li>Ark of The Cosmos</li></a>
+                        <a href="#galaxia-clone"><li>Galaxia</li></a>
+                        <a href="#aegis"><li>Aegis Blade</li></a>
+                        <a href="#triatic"><li>Triactis' True Paladinian Mage-Hammer of Might</li></a>
+
+                        <a href="#onyxia"><li>Onyxia</li></a>
+                        <a href="#sevens"><li>The Sevens Striker</li></a>
+                        <a href="#rancor"><li>Rancor</li></a>
+                        <a href="cosmic"><li>Cosmic Immaterializer</li></a>
+                    </ul>
+                </div>
+                <div class="pre-hardmode-list">
+                    <h1>Armor</h1>
+                    <ul style="padding-left:15% ;">
+                        <a href="#auric"><li>Auric Teslas</li></a>
+                        <a href="#demonshade"><li>Demonshade</li></a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row3">
+            <div class="offensive-col">
+                <h1><img src="img/Dimensional_Soul_Artifact.webp" id="offensive">OFFENSIVE</h1>
+                <div class="dark-sun-ring">
+                <p class="dark-sun-ring-left-p"><img src="img/Dark_Sun_Ring.webp">Dark Sun Ring</p>
+                    <p class="dark-sun-ring-right-p" style="text-align: left;">The Dark Sun Ring is a craftable post-Moon Lord accessory. 
+                        When equipped, it provides +0.5 life regen, 10 defense, a 12% increase to damage, +2 extra minion slots,
+                         and +120% minion knockback.
+                        During the day, it provides an additional +2 life regen for a total of +2.5. During the night, it instead provides an extra 20 defense 
+                        for a total of 30 defense. During a Solar Eclipse, it provides +1 life regen for a total of +1.5, and an extra 10 defense for a total 
+                        of 20 defense.
+                    </p>
+                </div>
+                <div class="eldritch-soul-artifact">
+                    <p class="eldritch-soul-artifact-left-p"><img src="img/Eldritch_Soul_Artifact.webp">Eldritch Soul Artifact</p>
+                        <p class="eldritch-soul-artifact-right-p" style="text-align: left;">The Eldritch Soul Artifact is a craftable post-Moon Lord accessory. When equipped, it reduces mana cost by 25%, increases the velocity 
+                            of ranged projectiles by 25%, increases max minions by 1, increases melee speed by 10%, and increases rogue stealth regeneration by 15%. 
+                            It also grants immunity to the Whispering Death debuff.
+                        </p>
+                </div>
+                <div class="elemental-gauntlet">
+                    <p class="elemental-gauntlet-left-p"><img src="img/Elemental_Gauntlet.webp">Elemental Gauntlet</p>
+                        <p class="elemental-gauntlet-right-p" style="text-align: left;">The Elemental Gauntlet is a craftable post-Moon Lord accessory 
+                            that is the final upgrade to the Titan Glove and Feral Claws. It provides a 15% increase
+                            to melee speed and damage and a 5% increase to melee</b> critical strike chance, a 20% increase 
+                            to true melee damage, and increases melee knockback. Any enemy struck by a melee attack are 
+                            inflicted with the Elemental Mix debuff.
+                        </p>
+                </div>
+                <div class="warbanner-of-the-sun">
+                    <p class="warbanner-of-the-sun-left-p"><img src="img/Warbanner_of_the_Sun.webp">Warbanner of the Sun</p>
+                        <p class="warbanner-of-the-sun-right-p" style="text-align: left;">The Warbanner of the Sun is a post-Moon Lord accessory that is dropped 
+                            by the Profaned Guardians. When equipped, it increases melee damage, true melee damage and melee 
+                            speed depending on how close the player is to an enemy, with a maximum boost of +20%. The bonuses 
+                            only come into effect when the player is 30 tiles or closer to an enemy.
+                        </p>
+                </div>
+
+                <div class="yharim-gift">
+                    <p class="yharim-gift-left-p"><img src="img/Yharim's_Gift.webp">Yharim's Gift</p>
+                        <p class="yharim-gift-right-p" style="text-align: left;">The Yharim's Gift is a post-Moon Lord accessory that is dropped by Yharon, 
+                            Dragon of Rebirth. When equipped, it gives the player 30 defense and increases movement speed and all 
+                            damage by 15%. The player also occasionally leaves behind exploding dragon dust while moving. The exploding 
+                            dragon dust deals 175 damage every frame, lasts for roughly 1 second, and inflicts Dragonfire for 2 seconds 
+                            on hit. When invincibility is active (i.e. when the player is damaged, enters the world or uses the Magic Mirror), 
+                            flaming meteors will fall from the sky. The meteors have a base damage of 375.
+                        </p>
+                </div>
+            </div>
+
+            <div class="defensive-col"> 
+                <h1 img src="img/rampart-of-deities.webp" id="defensive">DEFENSIVE</h1>
+                <div class="asgardian-aegis">
+                    <p class="asgardian-aegis-left-p"><img src="img/Asgardian_Aegis.webp">Asgardian Aegis</p>
+                        <p style="text-align: left;">The Asgardian Aegis is a craftable post-Moon Lord accessory with a wide array of defensive effects. 
+                            It grants 20 defense, immunity to knockback and the majority of debuffs, including God Slayer Inferno.<br><br>
+
+                            While equipped, the wearer can double tap a horizontal movement key to perform a supreme cosmic inferno dash with a base distance of 28 blocks. 
+                            Striking enemies during the shield dash will heavily damage them, inflict God Slayer 
+                            Inferno, and spawn god slayer explosions on top of them. Every time an enemy is struck, 
+                            the wearer is given 12 immunity frames.
+                        </p>
+                </div>
+
+                <div class="infected-jewel">
+                    <p class="infected-jewel-left-p"><img src="img/Infected_Jewel.png">Infected Jewel</p>
+                        <p class="infected-jewel-right-p" style="text-align: left;">The Infected Jewel is a craftable Hardmode accessory which is the direct upgrade of the Crown Jewel. 
+                            It grants 6 defense and 2 life regen. While any debuffs are active, the player's defense and life regen will increase by an additional 16 and 4 respectively
+                             (for a total of 22 defense and 6 life regen), and minimum natural life regen will be raised. If the player has multiple debuffs, each additional one grants 
+                             5 defense. As the player loses debuffs, the defense granted by debuffs will gradually decrease at a rate of one defense per second. Additionally, it negates 
+                             the effects of the Astral Infection debuff, while still counting towards being debuffed.
+                        </p>
+                </div>
+
+                <div class="the-absorber">
+                    <p class="the-absorber-left-p"><img src="img/The_Absorber.webp">The Absorber</p>
+                        <p class="the-absorber-right-p" style="text-align: left;">The Absorber is a craftable Hardmode accessory. When equipped, it grants the effects of all its component 
+                            accessories, along with the added effect of healing the player for 5% of the damage from incoming attacks and grants the player immunity to knockback. When consuming 
+                            Healing Potions, the player will summon a green aura which lingers for 30 seconds. Entering the aura spawned by The Absorber will grant players +6 life regen, 8% increased 
+                            damage, and 5% increased damage reduction for 10 seconds, along with cleansing all debuffs and defense damage. The Absorber Affliction debuff reduces enemy damage reduction 
+                            by 20% and deals 200 damage to enemies per second.
+                        </p>
+                </div>
+
+                <div class="the-sponge">
+                    <p class="the-sponge-left-p"><img src="img/The_Sponge.webp">The Sponge</p>
+                        <p class="the-sponge-right-p" style="text-align: left;">The Sponge is a craftable post-Moon Lord accessory which is the direct upgrade of the Rover Drive. After nine seconds of 
+                            equipping the item without taking damage, a barrier covers its user, which grants 30 defense and 10% damage reduction. As the barrier is formed, it builds up to 180 shield 
+                            durability at a rate of 30 durability per second. Durability depletes instead of health as the player takes damage equal to the amount of damage taken. Once all 180 shield 
+                            durability is depleted, the barrier breaks and all effects are taken away.<br><br>
+                            Durability regenerates the same way as it is formed, requiring the player to not take damage for nine seconds, causing it to regenerate at a rate of 30 durability per second. 
+                            It can regenerate if the shield is partially or fully damaged, but will immediately be interrupted as the player takes damage.
+                        </p>
+                </div>
+
+                <div class="draedon-heart">
+                    <p class="draedon-heart-left-p"><img src="img/Draedon's_Heart.gif">Draedon's Heart</p>
+                        <p class="draedon-heart-right-p" style="text-align: left;">Draedon's Heart is a post-Moon Lord accessory that is dropped by the Exo Mechs. When equipped, it grants 48 defense, 
+                            reduces incoming contact damage by 15%, and adds a Nanomachines meter, replacing the Adrenaline Meter in Revengeance Mode or higher. The Nanomachines meter will gradually 
+                            charge over time during boss encounters, taking 30 seconds to fill up. When the meter is full, it can be activated, which will cause the player to heal for 360 HP over 
+                            two seconds and gain a massive boost to their damage reduction. Getting hit while the meter is charging will not deplete the meter but will cause it to stop charging for 1 second.
+                        </p>
+                </div>
+           
+            </div>
+        </div>
+    </section>
+
+
+    <!--Weapon section-->
+    <section class="weapon-s1">
+        <div class="row2">
+            <div class="weapon-col">
+                <h1> - Weapon - </h1>
+                <p>Weapons are essential items used for combat against enemies, bosses, and even other players during PvP games. 
+                    Most weapons are crafted at any crafting station, while others can only be found in chests, as enemy/boss drops, 
+                    or purchased from NPCs. The Calamity Mod adds a large number of new and unique weapons for players to use. 
+                    Many are upgrades to existing weapons and others are wholly unique.</p>
+            </div>
+            <div class="weapon-col">
+                <img src="img/weapons.png">
+            </div>
+        </div>
+        <div class="row3">
+            <div class="weapon-col2">
+                <img src="img/Omega_Blue_healing_tentacles.webp"><h1>MELEE / RANGE / MAGE / SUMMONER</h1>
+                <div class="ark-of-the-cosmos">
+                    <p class="ark-of-the-cosmos-left-p"><img src="img/Ark_of_the_Cosmos.webp" id="ark">Ark of the Cosmos</p>
+                        <p class="ark-of-the-cosmos-right-p" style="text-align: left;">The Ark of the Cosmos is a craftable post-Moon Lord melee weapon that is the final upgrade 
+                            of the Fractured Ark
+                            and Broken Biome Blade. It uses a custom swing animation and performs a five-swing combo of a small upwards slash followed by a very wide circular one that shoots 6 homing 
+                            eon bolts, repeating the last two swings once, and then following it up with a medium-ranged throw, where the ark will be sent out spinning, following the player's cursor 
+                            for a maximum of 2.33 seconds, before coming back to them.<br><br>
+                            During the first four swings of the combo, a fast non-homing rending needle projectile will also be shot, and during the final part of the combo, the spinning ark will be 
+                            connected to the player by a constellation chain that deals 10% of the weapon's base damage. The rending needle deals 70% of the weapon's base damage, and the 6 eon bolts 
+                            will deal the combined amount of 70% of the weapon's base damage (11.66% base damage per bolt). If the player releases the left mouse button right in the middle of the throw 
+                            (between 20% and 75% of the way through, indicated by a blip sound alongside a pulse visual effect), the second half of the Ark will be sent out and both scissor blades will 
+                            snap together, boosting their damage by 120%, and shooting out 3 more homing eon bolts that deal 10% of the weapon's base damage each.<br><br>
+                            Right-clicking with the weapon performs a parry attack that grants the player brief invincibility frames on direct hits and reduce the damage of projectiles. Parrying will 
+                            fill up the weapon's charge.<br><br>
+                            Its best modifier is Godly. It cannot get modifiers that affect size.
+                        </p>
+                </div>
+
+                <div class="galaxia">
+                    <p class="galaxia-left-p"><img src="img/Galaxia_Cancer.webp" id="galaxia">Galaxia</p>
+                        <p class="galaxia-right-p" style="text-align: left;">Galaxia is a craftable post-Moon Lord melee weapon that is an upgraded version of the True Biome Blade. It possesses 4 separate 
+                            attack modes under the form of constellation-themed upgrades of the True Biome Blade's attunements. By default, it is equipped with the Phoenix's Pride attunement. However if the 
+                            player uses the right-click button, they will be able to cycle between the 4 attunements, with the cursor's position relative to the player determining in what direction the attunements 
+                            should be cycled through. Unlike its predecessor, the player can access all of the attunements from anywhere in the world without having to change biomes.<br><br>
+                            Unlike the True Biome Blade, Galaxia lacks a secondary attunement slot, but its active attunement will still give Galaxia one of two passive blessings depending on the tropic Galaxia is 
+                            attuned to. Its passive effect is indicated by the color of Galaxia's fiery blade, with the Cancer's Blessing being granted when it appears with crimson hues, and the Capricorn's Blessing 
+                            being granted when it uses cooler blue tones.<br><br>
+                            Its best modifier is Legendary.
+                        </p>
+                </div>
+
+                <div class="aegis-blade">
+                    <p class="aegis-blade-left-p"><img src="img/Aegis_Blade.png" id="aegis">Aegis Blade</p>
+                        <p class="aegis-blade-right-p" style="text-align: left;">The Aegis Blade is a Hardmode broadsword that is dropped by Golem. When used with its primary fire (left-click), it will swing and deal 
+                            contact damage in a regular manner. Upon striking an enemy, a medium-sized stationary flame explosion is produced, capable of damaging the target 6 more times, each dealing 5% less damage, 
+                            before dissipating. When used with its secondary fire (right-click), the broadsword itself will not deal damage but will instead shoot a fireball that deals 85% of the weapon's damage. The 
+                            fireball explodes into 3 flaming sparks on contact with a tile or enemy, dealing 75% of the fireball's damage. The sparks do not pierce and can linger on the ground for 2 seconds before 
+                            disappearing. If a spark hits an enemy, it spawns a small flame explosion that deals 75% of the spark's damage.<br><br>
+                            Its best modifier is Legendary.
+                        </p>
+                </div>
+
+                <div class="triactis-true-paladinian-mage-hammer-of-might">
+                    <p class="triactis-true-paladinian-mage-hammer-of-might-left-p"><img src="img/Triactis'_True_Paladinian_Mage-Hammer_of_Might.webp" id="triatic">Triactis' True Paladinian Mage-Hammer of Might</p>
+                        <p class="triactis-true-paladinian-mage-hammer-of-might-right-p" style="text-align: left;">Triactis' True Paladinian Mage-Hammer of Might is a craftable post-Moon Lord developer boomerang. It is 
+                            the final upgrade to the Pwnhammer. When in use, it rapidly throws an enormous image of the hammer that passes through tiles. The hammer can pierce through an unlimited number of enemies and 
+                            each hit on an enemy causes an explosion of bright blue and green particles. The explosion deals 25% of the damage of the hammer, ignores immunity frames, and deals typeless damage.<br><br>
+                            Its best modifier is Godly. It cannot get modifiers that affect size.
+                        </p>
+                </div>
+
+                <div class="onyxia">
+                    <p class="onyxia-left-p"><img src="img/Onyxia.webp" id="onyxia">Onyxia</p>
+                        <p class="onyxia-right-p" style="text-align: left;">The Onyxia is a craftable post-Moon Lord gun that is the direct upgrade of the Onyx Chain Blaster and the final upgrade to the Onyx Blaster. It 
+                            rapidly fires bursts of six bullets at a time alongside an onyx blast that deals 145% the damage of the fired bullets. The bullets from the Onyxia are fired in 3 symmetric pairs surrounding 
+                            the onyx blast. It has a 50% chance to not consume ammo when fired.<br><br>
+                            Its best modifier is Unreal.
+                        </p>
+                </div>
+
+                <div class="the-sevens-striker">
+                    <p class="the-sevens-striker-left-p"><img src="img/The_Sevens_Striker.webp" id="sevens">The Sevens Striker</p>
+                        <p class="the-sevens-striker-right-p" style="text-align: left;">The Sevens Striker is a craftable post-Moon Lord ranged weapon. When used with its primary fire (left-click), the slot machine 
+                            on the gun spins for two seconds, rolling one of four attacks at a random chance based on the type of coin. When used with its secondary fire (right-click), a burst of 10 coins are inaccurately 
+                            fired, each coin having a 20% chance to be consumed.<br><br>
+                            Its best modifier is Unreal.
+                        </p>
+                </div>
+
+                <div class="rancor">
+                    <p class="rancor-left-p"><img src="img/Rancor.webp" id="rancor">Rancor</p>
+                        <p class="rancor-right-p" style="text-align: left;">Rancor is a post-Moon Lord spell tome. It is the exhumed form of the Burning Sea. It creates a magic circle a set distance away from the player. 
+                            After 3 seconds, the magic circle fires a large laser beam that pierces infinitely. Upon contact with solid tiles, the laser spawns dust, fog, and lava at the impact location. Additionally, 
+                            damaging arms emerge out which deal 66.67% of the laser's damage, along with large cinders which fly out and deal 33.33% of the laser's damage. Both arms and cinders can also damage the player 
+                            for 300 / 375 Expert Mode / 450 Master Mode damage. Enemies struck by the laser beam are inflicted by the Rancor Burn debuff, which cause any organic enemies to disintegrate into ashes on death.<br><br>
+                            Its best modifier is Mythical.
+                        </p>
+                </div>
+
+                <div class="cosmic-immaterializer">
+                    <p class="cosmic-immaterializer-left-p"><img src="img/Cosmic_Immaterializer.webp" id="cosmic">Cosmic Immaterializer</p>
+                        <p class="cosmic-immaterializer-right-p" style="text-align: left;">The Cosmic Immaterializer is a craftable post-Moon Lord summon weapon. When used, it summons an entity of cosmic energy that fires homing 
+                            energy bolts and exploding stars at enemies. It requires 10 minion slots to summon 1 energy, and only 1 energy can be active at once.<br>
+                            Its best modifier is Ruthless. However, the weapon's knockback will not be affected due to already being 0.
+                        </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!--Armor section-->
+    <section class="armor-s1">
+        <div class="row2">
+            <div class="armor-col">
+                <h1> - Armor - </h1>
+                <p>Armor is a set of equipable defense items that reduce damage taken from enemies and most other damage sources. Armor pieces are equipped by placing them in the armor slots of the player's inventory. Armor can 
+                    also be placed in vanity slots to change the player's appearance without affecting stats. Armor pieces are either crafted, purchased from NPCs, or dropped from enemies.</p>
+            </div>
+            <div class="armor-col">
+                <img src="img/Armor.jpg">
+            </div>
+        </div>
+        <div class="row3">
+            <div class="armor-col2">
+                <img src="img/abyssal-diving-suit.webp"><h1>ARMOR</h1>
+                <div class="auric-tesla">
+                    <p class="auric-tesla-left-p"><img src="img/Auric_Tesla_armor.webp" id="auric">Auric Tesla</p>
+                        <p class="auric-tesla-right-p" style="text-align: left;">The Auric Tesla armor is a craftable endgame post-Moon Lord armor set crafted from several post-Moon Lord armors, Auric Bars, and other materials. 
+                            Moving with the full set equipped will produce a trail of bright golden sparkles; if all three pieces are visible then the player will also have afterimages.<br>
+                            It consists of the Auric Tesla Body Armor and Auric Tesla Cuisses, as well as having five different headpieces suited to each class, 
+                            being: the Auric Tesla Royal Helm, Auric Tesla Hooded Facemask, Auric Tesla Wire-Hemmed Visage, Auric Tesla Space Helmet, and 
+                            Auric Tesla Plumed Helm. All headpieces provide boosts to the damage output of their respective class.
+                        </p>
+                </div>
+
+                <div class="demonshade">
+                    <p class="demonshade-left-p"><img src="img/Demonshade_armor.webp"  id="demonshade">Demonshade</p>
+                        <p class="demonshade-right-p" style="text-align: left;">Demonshade armor is a craftable post-Moon Lord developer armor set crafted from Shadowspec Bars. It takes a total of 45 Shadowspec Bars to craft a full set. 
+                            It is arguably the most powerful armor set available in the Calamity Mod, although the wider array of status effects granted by the Auric Tesla armor may make that desirable in some cases. If the full set is 
+                            visible (whether equipped or in social slots), the player will have afterimages. If the full set is equipped, the player will leave behind purple dust as they move regardless of any social slot items worn.<br>
+                            It consists of a Demonshade Helm, Demonshade Breastplate, and Demonshade Greaves.
+                        </p>
+                </div>
+            </div>
+        </div>
+    </section>
+   
+    
+       
+   
+      
+
+
+    
+
+    
+
+   
+    
+
+
+
+
+
+    <section class="footer">
+        <h1> ABOUT</h1>
+        <p>You can find out more about the Calamity Mod here. This list is really just to introduce this awesome mod 
+            to you and give a bit of information about a truly enormous mod.</p>
+        <div class="icons">
+            <a href="https://www.youtube.com/watch?v=QwLvrnlfdNo"><i class="fa fa-facebook-official"></i></a>
+            <a href="https://www.youtube.com/watch?v=QwLvrnlfdNo"><i class="fa fa-twitter"></i></a>
+            <a href="https://www.youtube.com/watch?v=QwLvrnlfdNo"><i class="fa fa-instagram"></i></a>
+            <a href="https://www.youtube.com/watch?v=QwLvrnlfdNo"><i class="fa fa-reddit"></i></a>
+        </div>
+        <p>
+            
+        </p>
+    </section>
+
+    <style>
+        .fa-facebook-official{
+            font-size: 20px;
+        }
+            .fa:hover{
+                color: orange;
+                transition: 0.5s;
+            }
+            .fa-facebook-official:hover{
+                font-size: 25px;
+            }
+            .fa-twitter:hover{
+                font-size: 25px;
+            }
+            .fa-instagram:hover{
+                font-size: 25px;
+            }
+            .fa-reddit:hover{
+                font-size: 25px;
+            }
+
+        .fa-twitter{
+            font-size: 20px;
+        }
+        .fa-instagram{
+            font-size: 20px;
+        }
+        .fa-reddit{
+            font-size: 20px;
+        }   
+    </style>
+
+
+
+
+
+
+    <!-- Javascript for toggle Open/Close Menu in mobile mode -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-150px";
+        }
+    </script>
+
+</body>
+</html>

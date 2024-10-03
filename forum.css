@@ -1,0 +1,524 @@
+*{
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.background-img{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(59, 73, 75, 0.4), rgba(58, 81, 82, 0.4)),url(img/sunset.webp);
+    background-position: center;
+    background-size: cover;  /*-- BG Image will cover entire BG instead of multiple parts when zoom-out --*/
+    position: relative;
+}
+
+/*-- Head Page --*/
+nav{
+    display: flex;
+    padding: 2% 6% ;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{ 
+    width: 300px; 
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: white ;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+/*--Hover CSS on navigations--*/
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: aqua;
+    display: block;
+    margin: auto;
+    transition: 0.1s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+/*--Center Article CSS--*/
+.forum-content{
+    font-size: 20px;
+    width: 90%;
+    color:white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    padding: 6% 0 0 0;
+}
+.forum-content h1{
+    font-size: 56px;
+}
+.forum-content p{
+    margin: 10px 16% 40px 16%;
+    font-size: 18px;
+    color: white;
+}
+.forum-content img {
+    width: 4%;
+}
+
+/*-- Hover CSS on "contact" button --*/
+.contact{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+}
+.contact:hover{
+    border: 1px solid rgb(192, 62, 62);
+    background: rgb(192, 62, 62)
+}
+
+/*--Hides Open/Close icon on Desktop size--*/
+nav .fa{
+    display: none;
+}
+
+/*--Responsive Web actives when device's width is lower than 700px CSS -- Head Page section --*/
+@media(max-width: 700px){
+    .text-box h1{
+    font-size: 20px;
+    }
+    .nav-links ul li{
+    display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background: rgb(60, 32, 32);
+        height: 100vh;
+        width: 150px;
+        top: 0;
+        right: -150px;
+        text-align: left;
+        z-index: 2; 
+        transition: 0.5s;
+    }
+    nav .fa{
+        display: block;
+        color: white; 
+        margin: 10px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    .nav-links ul{
+        padding: 20px;
+    }
+
+
+    /*-- RES --*/
+    .forum-content h1{
+        font-size:40px !important;
+    }
+    .forum-content p{
+        font-size: 15px !important;
+    }
+    .forum-content img{
+        width: 10%;
+    }
+    .calamity-board-title h1{
+        font-size: 30px !important;
+    }
+    .outside-slideshow{
+        padding: 4% 0 4% ;
+    }
+    .comment-box-inside-2{
+        font-size: 16px !important;
+        display: none;
+    }
+    .dragon-img{
+        width: 60% !important;
+    }
+}
+
+
+
+.main-title{
+    color: white;
+    background: rgb(63, 56, 56);
+
+    background: linear-gradient(rgba(170, 90, 33, 0.5), rgba(106, 114, 51, 0.5)),url(img/astral-infection.jfif);
+    background-position: center;
+}
+.calamity-board-title{
+    color: white;
+    display: flex;
+    align-items: center;
+    background-image: linear-gradient(to right, rgb(20 15 11 / 85%), rgb(114 62 51 / 50%)),url(img/astral-infection.jfif);
+}
+.calamity-board-title h1{
+    font-size: 50px;
+    font-weight: bold;
+    font-family: garamond;
+    flex-basis: 50%;
+    margin: 6%;
+    
+}
+.calamity-board-title p{
+    flex-basis: 50%;
+}
+.star-icon-adjustment{
+    margin: 0 10px 0 0 ;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 10px 10px 10px;
+    border-style: outset;
+    border-width: 5px;
+    background: linear-gradient(rgba(170, 90, 33, 0.5), rgba(106, 114, 51, 0.5))
+}
+.star-icon-adjustment .fa{
+    padding: 0 4px 0 4px;
+}
+.flex-board-nav{
+    display: flex;
+    background: #3f48c2;
+    left: 20%;
+    padding: 0 0 0 10%;
+}
+.flex-board-nav a:hover{
+    color: black;
+    background: pink;
+}
+.flex-board-nav a{
+    color: white ;
+    text-decoration: none;
+    padding: 10px 18px 10px 18px ;
+    display: inline-block;
+}
+
+
+/*-- Slide Show CSS / Image nav -- */
+.image-slideshow-box{
+    max-width: 700px;
+    position: relative;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 3px;
+    border-style: solid; color: #b3c328;
+}
+.slideshow-image-each{
+    display: none;
+    animation-name: fade;     /*-- defines the type of slide animation / this name (fade) will connect into keyframe --*/
+    animation-duration: 1s;     /* -- duration when in fade translation --*/
+}
+
+.slideshow-image-each img{
+    width: 100%;
+}
+.caption-image{
+    color: white;
+    background: linear-gradient(rgba(34, 28, 28, 0.8),rgba(46, 34, 34, 0.8)); 
+    font-size: 18px;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    padding: 12px 10px 12px 10px ;
+    text-align: center;
+}
+@keyframes fade {
+    from {opacity: 0.4}        /*-- from means starting point of command (0.4 means fade 40%) --*/
+    to {opacity: 1}         /*-- to means last point of command ( 1 means fade 100% ) the repeat the keyframe --*/
+}
+
+
+.outside-slideshow{
+    padding: 4% 4% 0% 4%;
+}
+
+
+.text-below-image{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+.boss-category{
+    color: white;
+    background: black;
+    padding: 0 10% 15% 10%;
+}
+.boss-flex{
+    display: flex;
+    padding: 2% 0 2% 0;
+    border-top: outset; border-width: 10px;     width:70%;; border-color: rgb(207, 83, 118); 
+    border-bottom: outset; border-width: 10px;    width:70%;; border-color:  rgb(207, 83, 118); 
+}
+.flex-left-div{
+    flex-basis: 50%;
+    padding: 15px 20px 15px 15px;
+    margin: 0;
+    background: linear-gradient(rgba(37, 40, 73, 0.9),rgba(26, 33, 51, 0.9)); 
+    border: solid; border-color: rgb(30, 122, 188);
+}
+.flex-left-title{
+    font-size: 24px;
+    padding: 6% 2% 0 0;
+}
+.flex-left-div p{
+    font-size: 14px;
+    margin: 6px 2% 2% 2%;
+}
+
+/*-- Flex box right stat --*/
+.flex-right-div{
+    flex-basis: 20%;
+    align-items: center;
+    
+}
+.flex-right-div h1{
+    padding:  0 0 16px 0 ;
+}
+.flex-right{
+    width: 120%;
+    border: solid;
+    border-color: white;
+    justify-content: center;
+    text-align: center;
+    padding: 16px 40px 16px 16px;
+    margin: 0 0 0 2%;
+
+    border: solid; border-color: rgb(30, 122, 188);
+    background: linear-gradient(rgba(37, 40, 73, 0.9),rgba(26, 33, 51, 0.9)); 
+}
+.flex-right div i{
+    padding: 20px;
+}
+
+
+/*-- Discussion --*/
+.discussion{
+    background: url(img/ice-cave.png);
+    background-size: cover;
+    padding: 0 0 8% 0;
+}
+.comment{
+    border: solid 1px;
+    padding: 20px 20px 30px 10%;
+    margin: 0 0 20px 0;
+    background: black; 
+    width: 100%;
+}
+.comment h1{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+}
+.comment-form{
+    display: flex;
+    flex-direction: column;
+}
+
+.comment-form input{
+    width: 50%;
+    padding:8px;
+    margin: 10px;
+    box-sizing: border-box;    
+}
+.comment-form textarea{
+    width: 50%;
+    padding:8px;
+    margin: 10px 10px 10px 10px;
+    box-sizing: border-box;
+}
+.comment-form button {
+    flex: 0 1 auto;         /*-- flex pattern if written like that / grow - shrink - basis / 1 means on - 0 means off - auto means automatically --*/
+    width: 100px;
+    margin: 0 0 0 15px;
+    padding: 6px;
+    
+    cursor: pointer;
+    font-size: 18px;
+}
+.comment-form button:hover{
+    color: white;
+    background: rgb(13, 154, 182);
+}
+
+
+
+.comment-section{
+    margin: 30px 30px 0px 30px;
+    padding: 10px;
+    background: linear-gradient(to right, rgb(14, 12, 12), rgb(85 75 75 / 57%));
+    color: white;
+}
+@media(max-width:700px){
+    .comment-section{
+        font-size: 8px;
+    }
+    .text-below-image{
+        width: 10% !important;
+    }
+}
+.comment-head{
+    color: aqua;
+    text-align: left;
+    padding: 8px;
+    box-sizing: border-box;
+    background: linear-gradient(rgba(8, 7, 7, 0.6), rgba(20, 20, 20, 0.7));
+}
+.comment-box-each{
+    display: flex;
+    border: solid black;
+}
+.comment-box-inside-2{
+    padding: 10px;
+    width: 60%;
+}
+.comment-box-inside-21{
+    font-size: 20px;
+    display: flex;
+}
+.comment-box-inside-21 img{
+    width: 3%;
+    border-top-left-radius: 6px ;
+    border-bottom-left-radius: 6px;
+}
+.comment-box-inside-22 ul{
+    display: flex;
+}
+.comment-box-inside-22 ul li{
+    display: inline;
+    padding: 5px;
+    margin: 0;
+}
+
+.comment-box-inside-3{
+    width: 20%;
+    display: block;
+    padding: 10px;
+}
+.comment-box-inside-31{
+    display: inline-block;   /*-- let boxes inside "display: block" position near each others--*/
+    width: 50%;
+    height: 50%;
+    box-sizing: border-box;   /*-- accumulate size of each box will contain padding and border --*/
+}
+.comment-box-inside-32{
+    display: inline-block;   /*-- let boxes inside "display: block" position near each others--*/
+    width: 50%;
+    height: 50%;
+    box-sizing: border-box;   /*-- accumulate size of each box will contain padding and border --*/
+}
+
+
+.comment-box-inside-4{
+    text-align: right;
+    width: 20%;
+    display: block;
+    padding: 10px;
+}
+.comment-box-inside-41{
+    display: inline-block;   /*-- let boxes inside "display: block" position near each others--*/
+    width: 50%;
+    height: 50%;
+    box-sizing: border-box;   /*-- accumulate size of each box will contain padding and border --*/
+}
+.comment-box-inside-42{
+    display: inline-block;   /*-- let boxes inside "display: block" position near each others--*/
+    width: 50%;
+    height: 50%;
+    box-sizing: border-box;   /*-- accumulate size of each box will contain padding and border --*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /*-- Footer section --*/
+    .footer{
+        color: white;
+        background-color: rgb(83, 46, 46);
+        margin: auto;
+        text-align: center;
+        padding: 5%;
+        line-height: 1.5;
+    }
+    .footer p{
+        padding-bottom: 25px;
+    }
+.icons div a{
+    color: white;
+    text-decoration: none;
+}
+.icons .fa{
+    padding-right: 20px;
+    padding-left: 15px;
+    cursor: pointer;
+}
+.fa::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: aqua;
+    display: flexbox;
+    margin: auto;
+}
+.fa:hover::after{
+    width: 100%;
+
+}
